@@ -1,3 +1,3 @@
-# Meus Projetos
-    Aqui está os meus projetos pessoais.
+# Meus Projetos Públicos
+    Aqui está os meus projetos públicos.
  
