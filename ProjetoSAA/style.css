@@ -1,0 +1,60 @@
+/* Padrões do body*/
+body {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+   margin: 0;
+   font-family: 'Raleway', sans-serif;
+}
+
+/* Deixar os containers-fluid flexíveis*/
+.container-fluid {
+   flex: 1;
+}
+
+/* Personalização da caixa do formulário*/
+.my-form-container {
+   text-align: left;
+   padding: 20px;
+   border: 2px solid #ccc;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   border-radius: 10px;
+}
+
+/* Personalização da caixa de texto ao lado do formulário*/
+.text-container {
+   text-align: center;
+   padding: 30px;
+   border: 2px solid #ccc;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   border-radius: 10px; 
+}
+
+/* personalização da caixa de login*/
+.custom-bg {
+   background-color: #e2e2e2;
+   color: #000000;
+
+}
+
+/* Tamanho da caixa de login*/
+.custom-box-width {
+   max-width: 400px;
+   margin: 0 auto;
+}
+
+table {
+   border-collapse: collapse;
+   width: 100%;
+}
+
+th, td {
+   border: 1px solid #ddd;
+   padding: 10px;
+   text-align: left;
+}
+
+img {
+   max-width: 159px;
+   max-height: 150px;
+}

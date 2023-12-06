@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
+    <title>SAA - Serviço de Atendimento ao Aluno</title>
+</head>
+<body>
+    <!-- Container azul do site-->
+    <div class="container-fluid" style="background-color: #3296D4; color: white; display: flex; justify-content: center; align-items: center;">
+        <div class="container text-center">
+            <img src="img/todojunto.png" class="img-fluid" alt="Imagem do Cabeçalho">
+        </div>
+    </div>
+    <br>
+    
+    <!-- Formulário -->
+    <div class="container">
+        <div class="row">
+            <!-- Primeira Coluna -->
+            <div class="col-md-6 my-form-container">
+                <div class="mb-3">
+                    <form action="BackEnd/lista.php" method="post" onsubmit="return validarFormulario()" enctype="multipart/form-data">
+                        <h1 class="text-center">Preencha sua Reclamação</h1>
+                        <p style="color: red; font-size: small; text-align: right;">(*) Campos Obrigatórios</p>
+                        <label for="email" class="form-label">Nome: *</label>
+                        <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome"  required>
+                        <br>
+                        <label for="email" class="form-label">Matrícula: *</label>
+                        <input type="text" class="form-control" id="matricula" name="matricula" placeholder="Digite sua matricula"  required>
+                        <br>
+                        <label for="email" class="form-label">Email: *</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu email"  required>
+                        <br>
+                        <label for="problema" class="form-label">Qual o problema? *</label>
+                        <input type="text" class="form-control" id="problema" name="problema" placeholder="Descreva o problema"  required>
+                        <br>
+                        <label for="localizacao" class="form-label">Localização: *</label>
+                        <input type="text" class="form-control" id="localizacao" name="localizacao" placeholder="Digite com precisão o local do problema"  required>
+                        <br>
+                        <label for="imagem" class="form-label">Imagem: *</label>
+                        <input type="file" id="foto" name="foto"  required>
+                        <br>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+                <p style="text-align: right;">Faz parte da coordenação? <a href="login.html" target="_blank">Clique aqui</a>.</p>
+            </div>
+          
+            <!-- Segunda Coluna -->
+            <div class="col-md-6 text-container">
+                <p class="text-center">Bem-vindos ao SAA (Serviço de Atendimento ao Aluno), uma iniciativa revolucionária desenvolvida como parte de nosso compromisso com o bem-estar e a qualidade de vida dos alunos desta estimada instituição de ensino. Reconhecemos que cada um de vocês é uma parte vital do nosso ecossistema acadêmico, e é com grande entusiasmo que apresentamos este projeto de extensão, que visa abordar e solucionar os problemas que possam surgir em nossa universidade.</p>
+                <br>
+                <img src="img/logonova.png" class="img-fluid mx-auto d-block" alt="Imagem do Texto">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid text-center mt-3" style="background-color: #3296D4; color: white; padding: 20px;">
+        <p>&copy; 2023 SAA - Serviço de Atendimento ao Aluno. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Script personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>
